@@ -1,0 +1,465 @@
+@font-face {
+	font-family: "Lato";
+	src: url("fonts/Lato-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("fonts/Lato-SemiBold.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("fonts/Lato-Medium.ttf");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("fonts/Lato-Regular.ttf");
+	font-style: normal;
+	font-weight: 300;
+}
+
+* {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* общие стили для всех страниц */
+.container {
+	max-width: 1600px;
+	margin: 0px auto;
+	padding: 0 20px;
+}
+
+.reg {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 600px;
+	margin: 0px auto;
+}
+
+
+.reg input {
+	padding: 8px;
+}
+
+
+.reg button {
+	background: #2f4dd1;
+	color: white;
+	max-width: 200px;
+	padding: 20px 32px;
+	font-size: 24px;
+	margin: 0px auto;
+	border-radius: 5px;
+	border: none;
+	transition: 0.8s;
+}
+
+.reg a {
+	margin: 0px auto;
+}
+
+.title {
+	font-size: 48px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.reg button:hover {
+	background: #2B72B6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav.nav1 {
+    background-color: #2f4dd1;
+    color: #333;
+    padding: 10px;
+  }
+
+  nav.nav2 {
+    background-color: #d13a2f;
+    color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: white;
+  }
+  header h1 {
+    color: #333;
+  }
+  
+  /*-------------------------------ШРИФТЫ--------------------------------------------*/
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: local("Proxima Nova Bold"),
+		url(assets/fonts/proximanova_bold.otf)
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: local("Proxima Nova"),
+		url(assets/fonts/proximanova_regular.ttf)
+}
+
+/*---------------------------------ОБЩИЕ ДЛЯ СТРАНИЦ-------------------------------*/
+
+.preloader {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3000;
+	transition: .6s;
+	transition-delay: .5s;
+}
+
+.preloader.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.lds-facebook {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+
+.lds-facebook div {
+	display: inline-block;
+	position: absolute;
+	left: 8px;
+	width: 16px;
+	background: #2B72B6;
+	animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+	left: 8px;
+	animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+	left: 32px;
+	animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+	left: 56px;
+	animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+	0% {
+		top: 8px;
+		height: 64px;
+	}
+
+	50%,
+	100% {
+		top: 24px;
+		height: 32px;
+	}
+}
+
+
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: inside;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	margin: 5px 0px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #292D32;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Proxima Nova';
+	font-size: 18px;
+	color: #292D32;
+	overflow-x: hidden;
+	position: relative;
+	line-height: 155%;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 51px;
+	color: #292D32;
+	margin: 50px 0px;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 51px;
+	color: #292D32;
+	margin: 50px 0px;
+}
+
+h3 {
+	font-family: 'Proxima Nova';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+	color: #292D32;
+}
+
+main {
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1684px;
+	margin: 0px auto;
+	padding: 0 20px;
+}
+
+.btn {
+	border: 1px solid #292D32;
+	padding: 21px 50px;
+	line-height: 28px;
+	color: #292D32;
+	width: fit-content;
+	background-color: transparent;
+	font-size: 18px;
+	cursor: pointer;
+	transition: .6s;
+}
+
+.btn:hover,
+.btn_blog:hover {
+	background-color: #2B72B6;
+	border: 1px solid #2B72B6;
+	color: #fff;
+}
+
+.order-buy-btn:hover {
+	background-color: #fff;
+	color: #2B72B6
+}
+
+section {
+	margin-bottom: 100px;
+}
+
+section:first-of-type {
+	margin-top: 50px;
+}
+
+section#main {
+	margin-top: 0;
+	margin-bottom: 150px;
+}
+
+/*------------------------------------------Картинка с текстом и кнопкой------------------------*/
+.text-btn {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.text-btn-img img {
+	width: 100%;
+	min-width: 804px;
+	height: auto;
+}
+
+.text-btn-img {
+	display: flex;
+	justify-content: center;
+}
+
+.text-btn-title h3 {
+	text-align: left;
+	margin: 30px 0px;
+}
+
+.text-btn-botton {
+	margin-top: 30px;
+}
+
+.text-btn.revers {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+/*---------------------------------Формы--------------------------------------------------*/
+.solution-ico {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: inherit;
+	width: max-content;
+}
+
+.order__form {
+	position: relative;
+	transition: 0.4s;
+}
+
+.order__form::before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	opacity: 0.2;
+	border: 2px solid #FFFFFF;
+	top: 20px;
+	left: 20px;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+}
+
+.order__form.disabled {
+	opacity: 0.8;
+	pointer-events: none;
+}
+
+.order__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 110px 0px 110px 100px;
+	width: 50%;
+	position: relative;
+	z-index: 15;
+}
+
+img {
+	width: 800px;
+	margin-top: 20px;
+}
+
+.order-title h2 {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.order-subtitle {
+	color: #fff;
+}
+
+.order-inputs {
+	display: flex;
+	gap: 20px;
+}
+
+.order-inp {
+	padding: 21px 20px;
+	width: 390px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(196, 196, 196, 0.3);
+	outline: none;
+	color: #fff;
+	font-size: 18px;
+}
+
+input::placeholder {
+	color: #fff;
+}
+
+input.order-buy-inp::placeholder {
+	color: #292D32;
+}
+
+.order-btn {
+	color: #fff;
+	border: 1px solid #fff;
+}
